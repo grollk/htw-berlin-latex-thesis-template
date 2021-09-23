@@ -1,0 +1,48 @@
+\makeatletter
+
+\newcommand*{\gradeType}[1]{\gdef\@gradeType{#1}}
+\newcommand*{\program}[1]{\gdef\@program{#1}}
+\newcommand*{\facultyNr}[1]{\gdef\@facultyNr{#1}}
+\newcommand*{\firstExaminer}[1]{\gdef\@firstExaminer{#1}}
+\newcommand*{\secondExaminer}[1]{\gdef\@secondExaminer{#1}}
+\newcommand*{\submitDate}[1]{\gdef\@submitDate{#1}}
+
+\definecolor{htwPrimaryGreen}{cmyk}{0.55,0,1,0}
+
+\renewcommand*{\maketitle}{
+	\begin{titlepage}
+		\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+		\begin{center}
+		    \includegraphics{resources/images/S01_HTW_Berlin_Logo_pos_FARBIG_CMYK}
+			\vskip 0.5cm
+			\hrule
+			\vskip 1cm
+			{\Large \bfseries \textcolor{htwPrimaryGreen}{\@title}\par}
+			\vskip 1cm
+			\hrule
+			\vskip 0.5cm
+			{\Large \@gradeType}
+			\vskip 2cm
+			{Name des Studiengangs\\}
+			\vskip 0.5cm
+		    {\Large \@program\\}
+		    \vskip 0.5cm
+		    {\Large \bfseries \textcolor{htwPrimaryGreen}{Fachbereich \@facultyNr}\\}
+		    \vskip 0.5cm
+		    {vorgelegt von \\}
+		    \vskip 0.5cm
+			{\Large \@author}
+			\vfill
+			{Datum: \\}
+			\vskip 0.5cm
+			{\Large Berlin, \@submitDate}
+			\vskip 1.5cm
+			\begin{tabular}[t]{rl}
+				\Large Erstgutachter: & \Large \@firstExaminer\\
+				\Large Zweitgutachter: & \Large \@secondExaminer\\
+			\end{tabular}
+		\end{center}
+		\restoregeometry
+	\end{titlepage}
+}
+\makeatother
