@@ -10,3 +10,7 @@ Due to licensing the HTW logo and font must be downloaded seperatly and unpacked
 Font can be downloaded <a href="https://corporatedesign.htw-berlin.de/schrift-farbe/schriften/">here</a>.
 
 Logos can be downloaded <a href="https://corporatedesign.htw-berlin.de/logos/logo-htw-berlin/">here</a>.
+
+
+## Preview:
+![image](https://github.com/grollk/htw-berlin-latex-thesis-template/assets/44089084/48bb8739-fd21-4852-a39f-6a41a962606a)
